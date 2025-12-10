@@ -75,9 +75,9 @@ const camera = new CameraA("Salon");
 const tempSensor = new TemperatureSensorA("Cuisine", 30);
 const motionSensor = new MotionSensorA("Garage");
 
-const emailNotification = new Notification('Email', 'jalil@gmail.com');
+const emailNotification = new Notification('Email', 'jalil@test.com');
 const logNotification = new Notification('Log', null);
-const discordNotification = new Notification('Discord', 'https://discord.com');
+const discordNotification = new Notification('Discord', 'discord.gg/');
 
 emailNotification.notif(camera.detect());
 logNotification.notif(tempSensor.detect());
