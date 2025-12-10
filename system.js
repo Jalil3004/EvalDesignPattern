@@ -29,3 +29,25 @@ class MotionSensorA {
  } // Déclenche un message d’alerte (string)
  }
 
+
+ //ThermalSensorB
+class ThermalSensorB {
+constructor(position) {
+    this.position = position;
+} // position {
+scanHeatSignature() {
+    return {
+        "sensor": this.position,
+        "detection": "thermal",
+        "date": new Date().toISOString()
+    };
+} // Déclenche une donnée complexe json, voir ci dessous
+}
+  
+console.log(new ThermalSensorB("Hall d'entrée").scanHeatSignature());
+console.log(new ThermalSensorB("BatimentC").scanHeatSignature());
+
+
+
+
+
