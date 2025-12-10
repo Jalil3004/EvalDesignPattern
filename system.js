@@ -83,11 +83,5 @@ emailNotification.notif(camera.detect());
 logNotification.notif(tempSensor.detect());
 discordNotification.notif(motionSensor.detect());
 
-class Salle{
-    constructor(nom){
-        this.nom = nom;
-    }
-    
-}
 
 
